@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import Confetti from "../Confetti.jsx";
 
 const Home = () => {
   const [password, setPassword] = useState("");
@@ -21,11 +22,15 @@ const Home = () => {
 
   return (
     <main className="flex h-screen flex-col items-center justify-between p-24">
+      <Confetti />
       <div className="flex h-full pb-36 flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-center p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Congratulations! 🎉</h1>
-        <h1 className="text-4xl font-bold text-center mt-10 opacity-50">You successfully completed THE BIG HUNT 2! </h1>
+        <div className="flex flex-row items-center justify-center">
+          <h1 className="text-4xl font-bold text-center mt-10 opacity-50">You successfully completed</h1>
+          &nbsp; &nbsp;
+          <h1 className="text-4xl font-bold text-center mt-10 opacity-100">THE BIG HUNT 2!</h1>
+        </div>
       </div>
-
       <h1 className="text-3xl font-bold text-end w-full ">
         Made by{" "}
         <a className="hover:text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600" href="https://www.ykapf.com">
