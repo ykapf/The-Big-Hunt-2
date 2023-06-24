@@ -13,28 +13,21 @@ const Home = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (password.toLowerCase() === "7355608") {
-      router.push("/lhdjmiekhsgufdtybs");
+    if (password.toLowerCase() === "she's gotta chill") {
+      router.push("/");
     }
     setPassword(""); // Reset the password input
   };
 
   return (
     <main className="flex h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold text-start w-full ">Stage 1</h1>
-      {/* play music */}
-      <div className="w-0 h-0 flex flex-col items-center">
-        <iframe
-          className="w-0 h-0 opacity-0 "
-          src={"https://www.youtube.com/embed/z_vj5EPrL_Q?loop=1&iv_load_policy=3&controls=1&modestbranding=1&playsinline=1&color=white&autoplay=1"}
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        />
-      </div>
-      {/* end play music */}
+      <h1 className="text-3xl font-bold text-start w-full ">Stage 2</h1>
+
       <div className="flex h-full pb-36 flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold text-center p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">sneaky-peeky-like</h1>
-        <h1 className="text-4xl font-bold text-center mt-10 opacity-50">Remember you can ask for hints at any time in the race.</h1>
+        <h1 className="text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> 20/10/2021 16:47</h1>
+        <h1 className="text-4xl font-bold text-center mt-10 opacity-50">
+          If you&apos;re struggling to solve a puzzle, remember that your opponent is probably ahead of you and you are just being stupid.
+        </h1>
       </div>
 
       <form onSubmit={handleSubmit}>
