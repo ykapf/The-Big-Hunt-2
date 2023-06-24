@@ -22,6 +22,16 @@ const Home = () => {
 
   return (
     <main className="flex h-screen flex-col items-center justify-between p-24">
+      {/* play music */}
+      <div className="w-0 h-0 flex flex-col items-center">
+        <iframe
+          className="w-0 h-0 opacity-0 "
+          src={"https://www.youtube.com/embed/kSENMW9KHJ0?loop=1&iv_load_policy=3&controls=1&modestbranding=1&playsinline=1&color=white&autoplay=1"}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        />
+      </div>
+      {/* end play music */}
       <Confetti />
       <div className="flex h-full pb-36 flex-col items-center justify-center">
         <h1 className="text-6xl font-bold text-center p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Congratulations! 🎉</h1>
