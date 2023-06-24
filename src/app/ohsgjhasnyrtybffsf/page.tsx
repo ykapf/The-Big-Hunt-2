@@ -13,21 +13,20 @@ const Home = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    if (password.toLowerCase() === "she's gotta chill") {
-      router.push("/mahdjskapufjsheruf");
+    if (password.toLowerCase() === "robin das") {
+      router.push("/phsgfbbbgarbbjndtg");
     }
     setPassword(""); // Reset the password input
   };
 
   return (
     <main className="flex h-screen flex-col items-center justify-between p-24">
-      <h1 className="text-3xl font-bold text-start w-full ">Stage 2</h1>
+      <h1 className="text-3xl font-bold text-start w-full ">Stage 5</h1>
+      <img src="https://media.discordapp.net/attachments/719632067192815706/1116411641534349352/IMG_3683.png?width=114&height=136" />
 
       <div className="flex h-full pb-36 flex-col items-center justify-center">
-        <h1 className="text-6xl font-bold text-center text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600"> 20/10/2021 16:47</h1>
-        <h1 className="text-4xl font-bold text-center mt-10 opacity-50">
-          If you&apos;re struggling to solve a puzzle, remember that your opponent is probably ahead of you and you are just being stupid.
-        </h1>
+        <h1 className="text-6xl font-bold text-center p-2 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">Do you know</h1>
+        <h1 className="text-4xl font-bold text-center mt-10 opacity-50">_ _ _ _ _ &nbsp; &nbsp; _ _ _</h1>
       </div>
 
       <form onSubmit={handleSubmit}>
